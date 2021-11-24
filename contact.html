@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Contact</title>
-</head>
-<body>
-    <ul>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="bodyContact">
+    <div class="menu">
+      <ul>
         <li>
-            <a href="index.html"> Home</a>
+          <a href="index.html"> Home</a>
         </li>
         <li>
-            <a href="contact.html"> Contact</a> 
+          <a href="contact.html"> Contact</a>
         </li>
-    </ul>
-    
-    <h1>Contact me</h1>
+      </ul>
+    </div>
+    <div class="text">
+      <h1>Contact me</h1>
+    </div>
 
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name">
-        <br>
-        <br>
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="subject">Subject:</label><br>
-        <textarea name="subject" id="subject" cols="60" rows="5"></textarea>
-        <br>
-        <br>
+    <div class="form">
+      <form>
+        <div class="field">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" />
+        </div>
+        <div class="field">
+          <label for="email">E-mail:</label><br />
+          <input type="email" id="email" />
+        </div>
+        <div class="field">
+          <label for="subject">Subject:</label><br />
+          <textarea name="subject" id="subject" cols="60" rows="5"></textarea>
+        </div>
+
         <button>Enviar</button>
-    </form>
-    
-    <h2>Address:</h2>
-    <p>Rua São Mateus, 1060</p>
-    <p>Recife-PE</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7901.327382126698!2d-34.
-    93928087757309!3d-8.033567303283094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-    1!3m3!1m2!1s0x7ab197134e05f3b%3A0xec8eac493a400b6e!2sR.
-    %20S%C3%A3o%20Mateus%2C%20420-2147483647%20-%20Iputinga%2C%20Recife%20-%20PE%2C%2050680-000!5e0!3m2!1spt-BR!2sbr
-    !4v1637713646621!5m2!1spt-BR!2sbr" 
-    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  
+      </form>
+    </div>
 
-</body>
+    <div class="text">
+      <h2>Address:</h2>
+    </div>
+
+    <div class="address">
+      <p>Rua São Mateus, 1060</p>
+      <p>Recife-PE</p>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7901.327382126698!2d-34.
+            93928087757309!3d-8.033567303283094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x7ab197134e05f3b%3A0xec8eac493a400b6e!2sR.
+            %20S%C3%A3o%20Mateus%2C%20420-2147483647%20-%20Iputinga%2C%20Recife%20-%20PE%2C%2050680-000!5e0!3m2!1spt-BR!2sbr
+            !4v1637713646621!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </body>
 </html>
